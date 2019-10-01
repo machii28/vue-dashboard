@@ -1,6 +1,8 @@
 # vue-dashboard
 
-## Project setup
+> A Sandbox that allows me create a dynamic component for my future projects.
+
+### Project setup
 ```
 npm install
 ```
@@ -25,5 +27,7 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Framework Used
+
+* CSS
+    * [Tailwind](http://tailwindcss.com)

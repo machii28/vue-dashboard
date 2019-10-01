@@ -1,15 +1,11 @@
-import {configure} from '@storybook/vue';
-import Vue from 'vue';
+import { configure } from '@storybook/vue'; 
 
-new Vue({
-    el: '#app',
-    components: {
+import '../src/assets/css/tailwind.css';
 
-    }
-});
+const stories = require.context('./stories', true, /\.story.js$/);
 
 function loadStories() {
-
+    stories.keys().forEach(filename => stories(filename));
 }
 
 configure(loadStories, module);
