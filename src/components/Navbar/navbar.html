@@ -1,5 +1,5 @@
-<nav :class="className">
-    <div class="flex items-center text-white mr-6">
+<nav class="flex items-center justify-between flex-wrap p-6" :class="className">
+    <div class="flex items-center mr-6">
         <font-awesome-icon class="fill-current h-8 w-8 mr-2" icon="bars"></font-awesome-icon>
         <span class="font-semibold text-xl tracking-tight sm:hidden md:block lg:block xl:block">{{ brand }}</span>
     </div>
@@ -10,12 +10,12 @@
     </div>
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow m-1">
-            <a v-for="(link, index) in links" :key="index" :href="link.url" :class="link.class" v-if="link.position === 'left'">
+            <a v-for="(link, index) in links" :key="index" :href="link.url" class="ml-5" :class="link.class" v-if="link.position === 'left'">
                 {{ link.name }}
             </a>
         </div>
         <div>
-            <a v-for="(link, index) in links" :key="index" :href="link.url" :class="link.class" v-if="link.position === 'right'">{{ link.name }}</a>
+            <a v-for="(link, index) in links" :key="index" :href="link.url" class="ml-5" :class="link.class" v-if="link.position === 'right'">{{ link.name }}</a>
         </div>
     </div>
 </nav>

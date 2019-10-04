@@ -8,18 +8,18 @@ export default {
         return {
             navbarConfig: {
                 brand: 'Dashboard Component',
-                class: 'flex items-center justify-between flex-wrap p-6 bg-black',
+                class: 'bg-teal-900 text-white',
                 links: [
                     {
                         url: 'javascript:void(0)',
                         name: 'About',
-                        class: "ml-5 text-white",
+                        class: "",
                         position: 'left'
                     },
                     {
                         url: 'javascript:void(0)',
                         name: 'Author',
-                        class: 'ml-5 text-white',
+                        class: '',
                         position: 'left'
                     },
                 ]
