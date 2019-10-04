@@ -31,3 +31,12 @@ npm run lint
 
 * CSS
     * [Tailwind](http://tailwindcss.com)
+
+## Environment
+
+* [Node](https://nodejs.org/en/) : 10.0.0
+
+## Stacks
+
+* [Vue CLI 3](https://github.com/vuejs/vue-cli)
+* [Vue](https://vuejs.org/)
