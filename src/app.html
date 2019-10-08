@@ -1,5 +1,6 @@
 <div>
     <div class="container-fluid">
-        <navbar-component :config="navbarConfig"></navbar-component>
+        <navbar-component :hasSidebar="'SidebarComponent' in this.$options.components" :config="navbarConfig"></navbar-component>
+        <sidebar-component></sidebar-component>
     </div>
 </div>

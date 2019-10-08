@@ -1,6 +1,10 @@
 <nav class="flex items-center justify-between flex-wrap p-6" :class="className">
     <div class="flex items-center mr-6">
-        <font-awesome-icon class="fill-current h-8 w-8 mr-2" icon="bars"></font-awesome-icon>
+        <div @click="sidebarClick" class="sidebarmenu-icon" v-if="hasSidebar">
+            <div class="line-1 no-animation"></div>
+            <div class="line-2 no-animation"></div>
+            <div class="line-3 no-animation"></div>
+        </div>
         <span class="font-semibold text-xl tracking-tight sm:hidden md:block lg:block xl:block">{{ brand }}</span>
     </div>
     <div class="block lg:hidden">

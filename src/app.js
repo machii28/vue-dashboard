@@ -1,29 +1,15 @@
 import NavbarComponent from './components/Navbar';
+import SidebarComponent from './components/Sidebar';
+import NavbarConfig from './config/navbar.config.json';
 
 export default {
     components: {
-        NavbarComponent
+        NavbarComponent,
+        SidebarComponent
     },
     data() {
         return {
-            navbarConfig: {
-                brand: 'Dashboard Component',
-                class: 'bg-teal-900 text-white',
-                links: [
-                    {
-                        url: 'javascript:void(0)',
-                        name: 'About',
-                        class: "",
-                        position: 'left'
-                    },
-                    {
-                        url: 'javascript:void(0)',
-                        name: 'Author',
-                        class: '',
-                        position: 'left'
-                    },
-                ]
-            }
+            navbarConfig: NavbarConfig,
         }
     }
 }
